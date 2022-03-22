@@ -125,23 +125,6 @@ and (case when m.memid = 0 then (f.guestcost * b.slots)
 order by cost desc;
 
 
-
-/* PART 2: SQLite
-/* We now want you to jump over to a local instance of the database on your machine. 
-
-Copy and paste the LocalSQLConnection.py script into an empty Jupyter notebook, and run it. 
-
-Make sure that the SQLFiles folder containing thes files is in your working directory, and
-that you haven't changed the name of the .db file from 'sqlite\db\pythonsqlite'.
-
-You should see the output from the initial query 'SELECT * FROM FACILITIES'.
-
-Complete the remaining tasks in the Jupyter interface. If you struggle, feel free to go back
-to the PHPMyAdmin interface as and when you need to. 
-
-You'll need to paste your query into value of the 'query1' variable and run the code block again to get an output.
- 
-QUESTIONS:
 /* Q10: Produce a list of facilities with a total revenue less than 1000.
 The output of facility name and total revenue, sorted by revenue. Remember
 that there's a different cost for guests and members! */
